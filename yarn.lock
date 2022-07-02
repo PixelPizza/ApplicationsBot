@@ -219,7 +219,7 @@ __metadata:
     rollup-plugin-inject-process-env: ^1.3.1
     rollup-plugin-uglify: ^6.0.4
     tslib: ^2.4.0
-    tsup: ^5.12.8
+    tsup: ^6.1.3
     typescript: ^4.6.4
   languageName: unknown
   linkType: soft
@@ -2782,20 +2782,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.60.0":
-  version: 2.70.1
-  resolution: "rollup@npm:2.70.1"
-  dependencies:
-    fsevents: ~2.3.2
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  bin:
-    rollup: dist/bin/rollup
-  checksum: 06c62933e6e81a1c8c684d7d576e507081aabdb63cc0c91bca86b7348b66df03b77827068e4990b8b6c738bd3ef66dcc8c7ed7e0ea40b736068e7618f693133e
-  languageName: node
-  linkType: hard
-
 "rollup@npm:^2.74.1":
   version: 2.74.1
   resolution: "rollup@npm:2.74.1"
@@ -3147,9 +3133,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@npm:^5.12.8":
-  version: 5.12.8
-  resolution: "tsup@npm:5.12.8"
+"tsup@npm:^6.1.3":
+  version: 6.1.3
+  resolution: "tsup@npm:6.1.3"
   dependencies:
     bundle-require: ^3.0.2
     cac: ^6.7.12
@@ -3161,19 +3147,25 @@ __metadata:
     joycon: ^3.0.1
     postcss-load-config: ^3.0.1
     resolve-from: ^5.0.0
-    rollup: ^2.60.0
+    rollup: ^2.74.1
     source-map: 0.8.0-beta.0
     sucrase: ^3.20.3
     tree-kill: ^1.2.2
   peerDependencies:
+    "@swc/core": ^1
+    postcss: ^8.4.12
     typescript: ^4.1.0
   peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    postcss:
+      optional: true
     typescript:
       optional: true
   bin:
     tsup: dist/cli-default.js
     tsup-node: dist/cli-node.js
-  checksum: 52629d44e3804a51e2136b37d9cc725d736007aaf19ef4795b1c3f8ede5a786386e6e4f4dcfb5e8e00496b014ed767352d1b77a2d48dd8f72a064b94617934e5
+  checksum: c72639b76d4140cd0a6362196cf576ea486f9236384e3021ba7d4cdf394fbe55d1be408b3cc9c4432e3d4e7cb241c8bb65fd69773e61e011d5bf81129ad2cc00
   languageName: node
   linkType: hard
 
